@@ -1,0 +1,57 @@
+@import url('http://fonts.cdnfonts.com/css/kg-neatly-printed');
+
+#main{
+  height: auto;
+  background-image: url('https://image.freepik.com/free-vector/kids-doodles_1108-181.jpg');
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.card{
+  // background-color: black;
+  cursor: pointer;
+  background-color :#ee9617;
+background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  margin-bottom: 25px ;
+  width: 95vw;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  font-family: 'KG Neatly Printed Spaced', sans-serif;
+}
+
+
+
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}

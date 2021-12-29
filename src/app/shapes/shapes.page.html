@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="background:linear-gradient(to right, #1e9600, #fff200, #ff0000); color: black;">
+     
+
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link active" style="cursor: pointer;" >
+            <img  (click)="return()" src="https://img.icons8.com/ios-filled/50/ffffff/circled-left.png"/>
+          </a>
+        </li>
+
+        <li class="nav-item "> <h2>Shapes</h2></li>
+
+       
+      </ul>
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main">
+    <audio #audio controls hidden  [src]="curruntAudio" muted autoplay> </audio>
+
+
+    <!-- Shapes  -->
+
+    <div class="card" *ngFor="let data of audioObj "  >
+
+      <div>
+        <!-- <img class="speacker" (click)="PlayAudio(data.value)"
+          src="https://img.icons8.com/external-bearicons-glyph-bearicons/30/000000/external-speaker-call-to-action-bearicons-glyph-bearicons.png" /> -->
+          <img class="speacker" (click)="PlayAudio(data.value)" src="https://img.icons8.com/office/50/000000/speaker.png"/>
+
+      </div>
+      <div class="number">
+        <img [src]="data.imageLink" >
+      </div>
+
+      <div class="info">
+
+        <h1>{{data.value}}</h1>
+
+
+
+      </div>
+
+    </div>
+
+ 
+
+  </div>
+
+
+
+</ion-content>

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "balwadi",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

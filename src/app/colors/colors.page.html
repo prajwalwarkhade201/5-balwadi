@@ -1,0 +1,102 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="background:linear-gradient(to right, #1e9600, #fff200, #ff0000); color: black;">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link active" style="cursor: pointer;" >
+            <img  (click)="return()" src="https://img.icons8.com/ios-filled/50/ffffff/circled-left.png"/>
+          </a>
+        </li>
+
+        <li class="nav-item "> <h2>Colours</h2></li>
+
+       
+      </ul>
+
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="main">
+    <audio #audio controls hidden [src]="curruntAudio" muted autoplay> </audio>
+
+
+    <div class="buttons">
+      <button type="button" #color name="red"  (mouseover)="changeColor(color)" (click)="changeColor(color)" style="background-color: red;"
+        class="btn  btn-lg" > Red</button>
+
+      <button type="button" #color1 name="orange" (mouseover)="changeColor(color1)" (click)="changeColor(color1)" style="background-color: orange;"
+        class="btn  btn-lg" > Orange</button>
+
+      <button type="button" #color2 name="yellow" (mouseover)="changeColor(color2)" (click)="changeColor(color2)" style="background-color: yellow ;"
+        class="btn  btn-lg" >Yellow</button>
+
+      <button type="button" #color3 name="green" (mouseover)="changeColor(color3)" (click)="changeColor(color3)" style="background-color: green ; color: white;"
+        class="btn  btn-lg" >Green</button>
+
+      <button type="button" #color4 name="blue" (mouseover)="changeColor(color4)" (click)="changeColor(color4)"  style="background-color: blue ; color: white;"
+        class="btn  btn-lg" >Blue</button>
+
+      <button type="button" #color5 name="indigo" (mouseover)="changeColor(color5)" (click)="changeColor(color5)" style="background-color: indigo ;"
+        class="btn  btn-lg" >Indigo</button>
+
+      <button type="button" #color6 name="violet" (mouseover)="changeColor(color6)" (click)="changeColor(color6)" style="background-color: violet;"
+        class="btn  btn-lg" >Voilet</button>
+
+      <button type="button" #color7 name="purple" (mouseover)="changeColor(color7)" (click)="changeColor(color7)" style="background-color:purple ;"
+        class="btn  btn-lg" >Purple</button>
+
+      <button type="button" #color8 name="white" (mouseover)="changeColor(color8)" (click)="changeColor(color8)" style="background-color: white ;"
+        class="btn  btn-lg" >White</button>
+
+      <button type="button" #color9 name="black" (mouseover)="changeColor(color9)" (click)="changeColor(color9)" style="background-color: black ;color: white;"
+        class="btn  btn-lg" >Black</button>
+
+      <button type="button" #color10 name="pink" (mouseover)="changeColor(color10)" (click)="changeColor(color10)" style="background-color: pink;"
+        class="btn  btn-lg" >Pink</button>
+
+      <button type="button" #color11 name="brown" (mouseover)="changeColor(color11)" (click)="changeColor(color11)" style="background-color: brown ; color: white;"
+        class="btn  btn-lg" >Brown</button>
+
+      <button type="button" #color12 name="aqua" (mouseover)="changeColor(color12)" (click)="changeColor(color12)" style="background-color: aqua ;"
+        class="btn  btn-lg" >Aqua</button>
+
+
+
+
+
+    </div>
+
+
+    <div [style.background-color]="backColor" class="ViewColor">
+
+      <h1 [hidden]="backColor===''" [style.color]="backColor==='black' ?'white' : 'black'" >This is a {{backColor}} Color</h1>
+
+    </div>
+
+    <div class="clear bg-primary" (click)="clear()">
+
+      <h1>C</h1>
+      <h1>L</h1>
+      <h1>E</h1>
+      <h1>A</h1>
+      <h1>R</h1>
+      
+
+
+     
+    </div>
+
+
+    
+
+
+
+
+  </div>
+
+
+
+</ion-content>

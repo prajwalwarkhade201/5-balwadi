@@ -1,0 +1,158 @@
+@import url('http://fonts.cdnfonts.com/css/kg-neatly-printed');
+
+.main{
+
+    height: auto;
+    width: 100vw;
+    background-image: url('https://image.freepik.com/free-vector/kids-doodles_1108-181.jpg');
+
+    padding: 20px;
+    display: flex;
+   
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+
+.card{
+
+
+    height:45%;
+    width: 10cm;
+    // background: linear-gradient(to right, #fc5c7d, #6a82fb);
+    background-color: transparent;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+
+    font-family: 'KG Neatly Printed Spaced', sans-serif;
+  
+}
+
+.speacker{
+    cursor: pointer;
+}
+
+// .number{
+
+//     height: 50%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     margin: 10px;
+
+// }
+
+.info{
+
+    height: 40%;
+    width: 100%;
+    padding: 10Px;
+    // background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+ 
+    
+}
+
+.info h1{
+    font-size: 40px;
+    color: red;
+
+}
+
+
+
+// base
+.flip {
+    position: relative;
+    >.front,
+    >.back {
+        display: grid;
+        transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+        transition-duration: .5s;
+        transition-property: transform, opacity;
+    }
+    >.front {
+        transform: rotateY(0deg);
+    }
+    >.back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 80%;
+        height: 80%;
+        transform: rotateY(-180deg);
+    }
+    &:hover {
+        >.front {
+            transform: rotateY(180deg);
+        }
+        >.back {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+    }
+    &.flip-vertical {
+        >.back {
+            transform: rotateX(-180deg);
+        }
+        &:hover {
+            >.front {
+                transform: rotateX(180deg);
+            }
+            >.back {
+                transform: rotateX(0deg);
+            }
+        }
+    }
+}
+
+// custom
+.flip {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+   
+    // margin-bottom: 1em;
+    width: auto;
+    >.front,
+    >.back {
+      display: block;
+      color: white;
+      width: inherit;
+    //   margin-top: 3cm;
+      background-size: cover!important;
+      background-position: center!important;
+      height: 270px;
+      padding: 1em 2em;
+      background: #313131;
+      border-radius: 10px;
+      p {
+        font-size: 0.9125rem;
+        line-height: 160%;
+        color: #999;
+      }
+    }
+   
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type:none;   
+}
+
+.nav-item{
+    margin-left: 10px;
+}
